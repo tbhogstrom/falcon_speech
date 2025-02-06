@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ResourceCard from '../../components/ResourceCard.astro';
+
+const resources = [
+  {
+    title: "Speech Development Guide",
+    description: "A comprehensive guide to speech milestones from birth to age 5",
+    type: "PDF Guide",
+    downloadUrl: "/resources/speech-development-guide.pdf"
+  },
+  {
+    title: "Articulation Exercises",
+    description: "Practice exercises for common speech sounds",
+    type: "Worksheet",
+    downloadUrl: "/resources/articulation-exercises.pdf"
+  },
+  {
+    title: "Language Games",
+    description: "Interactive games to support language development",
+    type: "Online Tool",
+    link: "/resources/games"
+  }
+];
+
+const categories = ["All", "Guides", "Worksheets", "Games", "Videos"];
+---
+
+<Layout title="Resources">
+  <div class="space-y-8">
+    <div>
+      <h1 class="text-3xl font-bold text-gray-900">Resource Library</h1>
+      <p class="mt-2 text-gray-600">Access our collection of speech therapy resources and materials</p>
+    </div>
+
+    <div class="flex flex-wrap gap-4">
+      {categories.map(category => (
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+        >
+          {category}
+        </button>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {resources.map(resource => (
+        <ResourceCard {...resource} />
+      ))}
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Filter functionality will be implemented here
+  const filterButtons = document.querySelectorAll('button');
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Add filtering logic
+    });
+  });
+</script>
