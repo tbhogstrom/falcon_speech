@@ -1,54 +1,91 @@
-# Astro Starter Kit: Basics
+Initial Project Outline
+PROJECT: Build an Astro-based speech therapy web app with CMS blog, scheduling, resource library, and location-specific pages deployed on Vercel.
 
-```sh
-npm create astro@latest -- --template basics
+SUMMARY: Modern static site with decoupled CMS for blog content, dynamic location pages, session booking system, and resource management using Astro's component architecture.
+
+STEPS:
+
+Initialize Astro project with Tailwind CSS
+Create navigation component with responsive menu
+Build CMS integration for blog content
+Implement session scheduling form
+Develop location template for suburbs/states
+Set up resource library filtering system
+Configure Vercel deployment with ISR
+Add contact form with email integration
+STRUCTURE:
+
+falcon-speech/
+├─ public/
+│  ├─ resources/
+├─ src/
+│  ├─ components/
+│  ├─ content/
+│  │  ├─ blog/
+│  │  ├─ locations/
+│  ├─ layouts/
+│  ├─ pages/
+│  │  ├─ services/
+├─ astro.config.mjs
+├─ vercel.json
+DETAILED EXPLANATION:
+
+src/content/blog/: Markdown files with blog metadata
+src/components/Nav.astro: Responsive navigation bar
+src/pages/services/remote/[state].astro: Dynamic remote service pages
+public/resources/: PDF guides and therapy materials
+astro.config.mjs: CMS and integration configuration
+vercel.json: ISR and redirect rules
+CODE:
+
+src/components/Nav.astro ```astro
+// Responsive navigation bar with active state tracking const { title } = Astro.props const currentPath = Astro.url.pathname const navItems = ['Home', 'About', 'Services', 'Resources', 'Blog', 'Contact']
+{title}
+{navItems.map(item => ( {item} ))}
 ```
+src/content/blog/post1.md ```markdown
+title: "Speech Development Milestones" pubDate: 2023-07-15 author: "Dr. Sarah Johnson" description: "Understanding early childhood speech patterns" image: "/blog-images/milestones.jpg"
+Content about key developmental stages...
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+`src/pages/services/remote/[state].astro`
+```astro
+---
+// Dynamic page generator for state-specific services
+import { getCollection } from 'astro:content'
+export async function getStaticPaths() {
+  const states = ['alaska', 'washington', 'oregon']
+  return states.map(state => ({ params: { state }, props: { state } }))
+}
+const { state } = Astro.props
+const data = await getCollection('locations', ({ id }) => id.includes(state))
+---
+<html>
+  <body>
+    <h1>{state.toUpperCase()} Remote Services</h1>
+    {data.map(service => (
+      <div>{service.data.description}</div>
+    ))}
+  </body>
+</html>
+SETUP:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+#!/bin/bash
+npm create astro@latest -- --template basics --yes
+cd falcon-speech
+npm install @astrojs/vercel @astrojs/tailwind decap-cms
+mkdir -p src/content/{blog,locations} public/resources
+TAKEAWAYS:
 
-## 🚀 Project Structure
+Astro's island architecture ensures fast page loads
+Decap CMS enables non-technical content updates
+Vercel edge caching improves location page performance
+Component-driven design simplifies maintenance
+Markdown content allows version-controlled resources
+SUGGESTIONS:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Add Calendly integration for session booking
+Implement PDF previews for resource library
+Create clinician login portal
+Add interactive speech exercise demos
+Integrate Google Maps for service areas
