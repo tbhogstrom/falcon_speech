@@ -4,80 +4,324 @@ import Layout from '../../layouts/Layout.astro';
 const services = [
   {
     title: "Speech Sound Disorders",
-    description: "Treatment for difficulties with speech sound production, including articulation and phonological disorders.",
+    description: "Hybrid in-home evaluations and virtual therapy for articulation and phonological disorders.",
     icon: "M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
   },
   {
     title: "Language Delays",
-    description: "Support for children experiencing delays in language development, including vocabulary, grammar, and comprehension.",
+    description: "Comprehensive in-home assessments with flexible virtual therapy for vocabulary, grammar, and comprehension development.",
     icon: "M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
   },
   {
     title: "Stuttering Therapy",
-    description: "Comprehensive treatment programs for individuals who stutter, focusing on fluency and confidence.",
+    description: "Neurodiversity affirming fluency programs combining in-person evaluations with convenient virtual sessions.",
     icon: "M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
   },
   {
     title: "Voice Therapy",
-    description: "Treatment for voice disorders, including hoarseness, vocal nodules, and professional voice care.",
+    description: "Hybrid approach for voice disorders, vocal nodules, and professional voice care with detailed progress tracking.",
     icon: "M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"
   },
   {
     title: "Accent Modification",
-    description: "Personalized programs to enhance pronunciation and communication clarity for non-native English speakers.",
+    description: "Personalized programs with hybrid delivery to enhance pronunciation and communication clarity.",
     icon: "M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
   },
   {
     title: "Social Communication",
-    description: "Support for developing social language skills, including pragmatics and conversation abilities.",
+    description: "Neurodiversity affirming support for social language skills with alternating in-home and virtual sessions.",
     icon: "M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
   }
 ];
 ---
 
-<Layout title="Our Services">
+<Layout title="Services & Pricing - Hybrid Speech Therapy | Falcon Speech Services">
   <div class="max-w-7xl mx-auto">
+    <!-- Header -->
     <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold text-gray-900">Our Services</h1>
-      <p class="mt-4 text-lg text-gray-600">Comprehensive speech therapy services for all ages and needs</p>
+      <h1 class="text-4xl font-bold text-gray-900">Services & Pricing</h1>
+      <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+        Hybrid speech therapy services combining in-home evaluations with flexible virtual therapy sessions for Hood River Gorge families
+      </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {services.map(service => (
-        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-          <div class="text-primary mb-4">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={service.icon} />
-            </svg>
+    <!-- Pricing Models Overview -->
+    <div class="mb-16">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Subscription Model -->
+        <div class="bg-primary text-white rounded-xl p-8">
+          <div class="text-center mb-6">
+            <h2 class="text-3xl font-bold mb-2">Monthly Subscription</h2>
+            <div class="text-5xl font-bold mb-2">$500</div>
+            <div class="text-xl opacity-90">per month</div>
           </div>
-          <h2 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h2>
-          <p class="text-gray-600">{service.description}</p>
-          <div class="mt-4">
-            <a
-              href={`/schedule?service=${encodeURIComponent(service.title.toLowerCase())}`}
-              class="inline-flex items-center text-primary hover:text-primary-700"
-            >
-              Schedule Now
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          
+          <div class="space-y-4 mb-6">
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-            </a>
+              <span>Choice: 4 × 50-min OR 8 × 25-min sessions</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Alternating in-home and virtual delivery</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Detailed session notes and progress tracking</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Parent coaching and family education</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>10-month commitment (school year)</span>
+            </div>
+          </div>
+          
+          <a href="/schedule" class="block w-full text-center bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100">
+            Start Subscription
+          </a>
+        </div>
+
+        <!-- Evaluation Services -->
+        <div class="bg-gray-50 rounded-xl p-8">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">In-Home Evaluations</h2>
+          
+          <div class="space-y-4">
+            <div class="bg-white rounded-lg p-4 border-l-4 border-primary">
+              <div class="flex justify-between items-center">
+                <div>
+                  <div class="font-semibold text-gray-900">Speech-Only Evaluation</div>
+                  <div class="text-sm text-gray-600">Focused speech sound assessment</div>
+                </div>
+                <div class="text-2xl font-bold text-primary">$150</div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-lg p-4 border-l-4 border-primary">
+              <div class="flex justify-between items-center">
+                <div>
+                  <div class="font-semibold text-gray-900">Speech + Language</div>
+                  <div class="text-sm text-gray-600">Comprehensive communication evaluation</div>
+                </div>
+                <div class="text-2xl font-bold text-primary">$300</div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-lg p-4 border-l-4 border-primary">
+              <div class="flex justify-between items-center">
+                <div>
+                  <div class="font-semibold text-gray-900">AAC Consultation</div>
+                  <div class="text-sm text-gray-600">Assistive communication assessment</div>
+                </div>
+                <div class="text-2xl font-bold text-primary">$500</div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-lg p-4 border-l-4 border-primary">
+              <div class="flex justify-between items-center">
+                <div>
+                  <div class="font-semibold text-gray-900">Comprehensive Dyslexia</div>
+                  <div class="text-sm text-gray-600">Full dyslexia + speech + language</div>
+                </div>
+                <div class="text-2xl font-bold text-primary">$1,000</div>
+              </div>
+            </div>
+          </div>
+          
+          <a href="/schedule" class="block w-full text-center bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 mt-6">
+            Book Evaluation
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hybrid Model Explanation -->
+    <div class="mb-16 bg-blue-50 rounded-xl p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Our Hybrid Model Explained</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="bg-blue-100 p-3 rounded-full mr-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900">In-Home Sessions</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            We come directly to your home for evaluations and some therapy sessions, providing assessment and treatment in your child's most natural environment.
+          </p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              More accurate assessment results
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Comfortable, familiar environment
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              No travel stress for families
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900">Virtual Sessions</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Regular therapy sessions conducted online provide consistent support with maximum flexibility, alternating with in-home visits on a schedule that works for your family.
+          </p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Flexible scheduling around your life
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Weather-independent sessions
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Interactive digital therapy tools
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Therapy Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {services.map(service => (
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <div class="text-primary mb-4">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={service.icon} />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+            <p class="text-gray-600 mb-4">{service.description}</p>
+            <div class="mt-4">
+              <a
+                href={`/schedule?service=${encodeURIComponent(service.title.toLowerCase())}`}
+                class="inline-flex items-center text-primary hover:text-primary-700"
+              >
+                Schedule Evaluation
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Neurodiversity Affirming Section -->
+    <div class="mb-16 bg-purple-50 rounded-xl p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Neurodiversity Affirming Therapy</h2>
+      <div class="max-w-4xl mx-auto">
+        <p class="text-lg text-gray-600 mb-6 text-center">
+          Our approach celebrates and supports each individual's unique way of communicating, focusing on strengths rather than deficits.
+        </p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">Strength-Based</h3>
+            <p class="text-sm text-gray-600">Building on each individual's natural abilities and interests</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">Collaborative</h3>
+            <p class="text-sm text-gray-600">Working with families as equal partners in the therapeutic process</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">Respectful</h3>
+            <p class="text-sm text-gray-600">Honoring different ways of communicating and being in the world</p>
           </div>
         </div>
-      ))}
+      </div>
     </div>
 
-    <div class="mt-16 bg-gray-50 rounded-lg p-8">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-2xl font-bold text-gray-900 mb-4">Not sure which service you need?</h2>
-        <p class="text-gray-600 mb-6">
-          Contact us for a free consultation. Our experts will help determine the best treatment plan for you or your loved one.
-        </p>
-        <a
-          href="/contact"
-          class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-700"
-        >
-          Get in Touch
+    <!-- FAQ Section -->
+    <div class="mb-16 bg-gray-50 rounded-xl p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">How does the subscription model work?</h3>
+          <p class="text-gray-600 mb-6">You choose either 4 × 50-minute or 8 × 25-minute sessions per month, delivered through our hybrid model of alternating in-home and virtual sessions. The 10-month commitment follows the school year schedule.</p>
+          
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">What areas do you serve for in-home visits?</h3>
+          <p class="text-gray-600">We provide in-home evaluations and therapy throughout the Hood River Gorge region, including White Salmon, Hood River, Cascade Locks, Trout Lake, and Stevenson.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">Do I need an evaluation before starting therapy?</h3>
+          <p class="text-gray-600 mb-6">Yes, we begin with an in-home evaluation to understand your child's specific needs and develop a personalized treatment plan. This ensures the most effective therapy approach.</p>
+          
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">Can I switch between session lengths?</h3>
+          <p class="text-gray-600">Yes, we can adjust session length during your subscription based on your child's changing needs and attention span. We'll work together to find what works best.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
+      <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+        Schedule your in-home evaluation today and discover how our hybrid model can transform your child's communication journey.
+      </p>
+      <div class="flex justify-center space-x-4">
+        <a href="/schedule" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700">
+          Book Your Evaluation
+        </a>
+        <a href="/contact" class="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary-50">
+          Ask Questions
         </a>
       </div>
     </div>
