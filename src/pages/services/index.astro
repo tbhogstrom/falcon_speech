@@ -23,11 +23,6 @@ const services = [
     icon: "M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"
   },
   {
-    title: "Accent Modification",
-    description: "Personalized programs with hybrid delivery to enhance pronunciation and communication clarity.",
-    icon: "M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
-  },
-  {
     title: "Social Communication",
     description: "Neurodiversity affirming support for social language skills with alternating in-home and virtual sessions.",
     icon: "M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
@@ -45,97 +40,142 @@ const services = [
       </p>
     </div>
 
-    <!-- Pricing Models Overview -->
+    <!-- Recommended Therapy Models -->
     <div class="mb-16">
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Subscription Model -->
-        <div class="bg-primary text-white rounded-xl p-8">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Recommended Therapy Models</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Based on your child's needs and current skills, we may recommend one of these hybrid therapy models
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Preferred Model -->
+        <div class="bg-primary text-white rounded-xl p-8 relative">
+          <div class="absolute top-4 right-4 bg-white text-primary px-3 py-1 rounded-full text-sm font-medium">
+            Most Popular
+          </div>
           <div class="text-center mb-6">
-            <h2 class="text-3xl font-bold mb-2">Monthly Subscription</h2>
-            <div class="text-5xl font-bold mb-2">$500</div>
-            <div class="text-xl opacity-90">per month</div>
+            <h3 class="text-2xl font-bold mb-2">Preferred Model</h3>
+            <p class="text-lg opacity-90">For most families and children</p>
           </div>
           
           <div class="space-y-4 mb-6">
-            <div class="flex items-center">
-              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Choice: 4 × 50-min OR 8 × 25-min sessions</span>
+            <div class="flex items-center justify-between bg-white bg-opacity-20 rounded-lg p-3">
+              <span>6 × 30-min teletherapy sessions</span>
+              <span class="font-bold">$600/month</span>
             </div>
-            <div class="flex items-center">
-              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Alternating in-home and virtual delivery</span>
+            <div class="flex items-center justify-between bg-white bg-opacity-20 rounded-lg p-3">
+              <span>1 × 45-min in-person session</span>
+              <span class="font-bold">$135/month</span>
             </div>
-            <div class="flex items-center">
-              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Detailed session notes and progress tracking</span>
-            </div>
-            <div class="flex items-center">
-              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Parent coaching and family education</span>
-            </div>
-            <div class="flex items-center">
-              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>10-month commitment (school year)</span>
+            <div class="border-t border-white border-opacity-30 pt-3">
+              <div class="flex items-center justify-between text-xl font-bold">
+                <span>Total Monthly Cost:</span>
+                <span>$735</span>
+              </div>
             </div>
           </div>
-          
-          <a href="/schedule" class="block w-full text-center bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100">
-            Start Subscription
-          </a>
         </div>
 
-        <!-- Evaluation Services -->
+        <!-- Alternative Model -->
+        <div class="bg-gray-50 border-2 border-gray-200 rounded-xl p-8">
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Alternative Model</h3>
+            <p class="text-lg text-gray-600">For older, more independent children</p>
+          </div>
+          
+          <div class="space-y-4 mb-6">
+            <div class="flex items-center justify-between bg-white rounded-lg p-3 border">
+              <span class="text-gray-900">3 × 50-min teletherapy sessions</span>
+              <span class="font-bold text-gray-900">$540/month</span>
+            </div>
+            <div class="flex items-center justify-between bg-white rounded-lg p-3 border">
+              <span class="text-gray-900">1 × 60-min in-person session</span>
+              <span class="font-bold text-gray-900">$180/month</span>
+            </div>
+            <div class="border-t border-gray-300 pt-3">
+              <div class="flex items-center justify-between text-xl font-bold text-gray-900">
+                <span>Total Monthly Cost:</span>
+                <span>$720</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Individual Session Rates -->
+    <div class="mb-16">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Individual Session Rates</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Flexible pay-per-session options for families who prefer individual scheduling
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div class="bg-white p-6 rounded-lg shadow-md border-2 border-gray-100">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">$100</div>
+            <div class="text-lg font-semibold mb-3">30-min Teletherapy</div>
+            <div class="text-sm text-gray-600">Virtual sessions via secure video platform</div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md border-2 border-gray-100">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">$180</div>
+            <div class="text-lg font-semibold mb-3">50-min Teletherapy</div>
+            <div class="text-sm text-gray-600">Extended virtual sessions for older children</div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md border-2 border-gray-100">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">$135</div>
+            <div class="text-lg font-semibold mb-3">45-min In-Person</div>
+            <div class="text-sm text-gray-600">In-home therapy sessions</div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md border-2 border-gray-100">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">$180</div>
+            <div class="text-lg font-semibold mb-3">60-min In-Person</div>
+            <div class="text-sm text-gray-600">Extended in-home sessions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Evaluation Services -->
+    <div class="mb-16">
+      <div class="max-w-4xl mx-auto">
         <div class="bg-gray-50 rounded-xl p-8">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">In-Home Evaluations</h2>
+          <p class="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">
+            All evaluations are conducted in-person in the comfort of your home. Kailey will bring all necessary materials and will work with your child in a familiar environment to help ensure the most accurate and supportive assessment experience.
+          </p>
           
           <div class="space-y-4">
             <div class="bg-white rounded-lg p-4 border-l-4 border-primary">
               <div class="flex justify-between items-center">
                 <div>
-                  <div class="font-semibold text-gray-900">Speech-Only Evaluation</div>
-                  <div class="text-sm text-gray-600">Focused speech sound assessment</div>
+                  <div class="font-semibold text-gray-900">Speech or Language Evaluation</div>
+                  <div class="text-sm text-gray-600">Focus on one area: speech-only or language-only concerns</div>
                 </div>
-                <div class="text-2xl font-bold text-primary">$150</div>
+                <div class="text-2xl font-bold text-primary">$250</div>
               </div>
             </div>
             
             <div class="bg-white rounded-lg p-4 border-l-4 border-primary">
               <div class="flex justify-between items-center">
                 <div>
-                  <div class="font-semibold text-gray-900">Speech + Language</div>
-                  <div class="text-sm text-gray-600">Comprehensive communication evaluation</div>
-                </div>
-                <div class="text-2xl font-bold text-primary">$300</div>
-              </div>
-            </div>
-            
-            <div class="bg-white rounded-lg p-4 border-l-4 border-primary">
-              <div class="flex justify-between items-center">
-                <div>
-                  <div class="font-semibold text-gray-900">AAC Consultation</div>
-                  <div class="text-sm text-gray-600">Assistive communication assessment</div>
+                  <div class="font-semibold text-gray-900">Comprehensive Speech and Language</div>
+                  <div class="text-sm text-gray-600">Full assessment of both speech and language skills</div>
                 </div>
                 <div class="text-2xl font-bold text-primary">$500</div>
-              </div>
-            </div>
-            
-            <div class="bg-white rounded-lg p-4 border-l-4 border-primary">
-              <div class="flex justify-between items-center">
-                <div>
-                  <div class="font-semibold text-gray-900">Comprehensive Dyslexia</div>
-                  <div class="text-sm text-gray-600">Full dyslexia + speech + language</div>
-                </div>
-                <div class="text-2xl font-bold text-primary">$1,000</div>
               </div>
             </div>
           </div>
@@ -143,6 +183,124 @@ const services = [
           <a href="/schedule" class="block w-full text-center bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 mt-6">
             Book Evaluation
           </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insurance & Payment Information -->
+    <div class="mb-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-blue-50 rounded-xl p-8">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Private Pay Practice</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Why We Don't Accept Insurance</h3>
+              <div class="space-y-3 text-gray-600">
+                <p>We are a private-pay practice and do not bill insurance directly. This decision allows us to provide high-quality, personalized care without the administrative limitations and time constraints that often come with insurance-based services.</p>
+                <div class="bg-white rounded-lg p-4">
+                  <h4 class="font-semibold text-gray-900 mb-2">Benefits of our approach:</h4>
+                  <ul class="space-y-1 text-sm">
+                    <li>• More time focused on your child's progress</li>
+                    <li>• Flexible, individualized services</li>
+                    <li>• Manageable caseload for highest quality care</li>
+                    <li>• No insurance paperwork delays</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Superbills for Reimbursement</h3>
+              <div class="space-y-3 text-gray-600">
+                <p>We provide detailed superbills upon request for you to submit to your insurance company for possible out-of-network reimbursement.</p>
+                <div class="bg-white rounded-lg p-4">
+                  <h4 class="font-semibold text-gray-900 mb-2">Superbills include:</h4>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Billing codes and session dates</li>
+                    <li>• Provider credentials</li>
+                    <li>• Detailed service descriptions</li>
+                    <li>• All information required by insurers</li>
+                  </ul>
+                </div>
+                <p class="text-sm"><strong>Note:</strong> Reimbursement is not guaranteed and depends on your specific plan and out-of-network benefits.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cancellation & Policy Information -->
+    <div class="mb-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-red-50 rounded-xl p-8">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Cancellation & Session Policies</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Cancellation Policy -->
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">Cancellation Policy</h3>
+                <div class="bg-white rounded-lg p-4 mb-4">
+                  <p class="text-gray-600 mb-3"><strong>Required Notice:</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-600">
+                    <li>• Teletherapy sessions: 24 hours advance notice</li>
+                    <li>• In-person sessions: 48 hours advance notice</li>
+                    <li>• Cancellations with 48+ hours notice: No fee</li>
+                  </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg p-4">
+                  <p class="text-gray-600 mb-3"><strong>Late Cancellation Fees:</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-600">
+                    <li>• 30-min teletherapy: $75</li>
+                    <li>• 50-min teletherapy: $100</li>
+                    <li>• In-person sessions: Full session fee</li>
+                  </ul>
+                  <p class="text-xs text-gray-500 mt-2">Three consecutive missed sessions without notice may result in removal from schedule.</p>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">Rescheduling Policy</h3>
+                <div class="bg-white rounded-lg p-4">
+                  <p class="text-sm text-gray-600">If you cancel within the 48-hour window but there is availability to reschedule within the same week, the cancellation fee will be waived. Makeup sessions are not guaranteed and depend on therapist availability.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Policies -->
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">Sick Policy</h3>
+                <div class="bg-white rounded-lg p-4">
+                  <p class="text-sm text-gray-600 mb-2">Each family is allowed <strong>two sick-day cancellations per calendar year</strong> without penalty. Please notify the SLP as soon as possible if your child is unwell.</p>
+                  <p class="text-xs text-gray-500">Additional same-day illness cancellations may be subject to standard cancellation fees.</p>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">Weather & Holiday Policy</h3>
+                <div class="bg-white rounded-lg p-4 space-y-3">
+                  <div>
+                    <p class="text-sm font-medium text-gray-700">Inclement Weather (In-Person Only):</p>
+                    <p class="text-xs text-gray-600">If the SLP cannot safely travel to your home, you won't be charged. A teletherapy alternative may be offered.</p>
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium text-gray-700">Holiday Closures:</p>
+                    <p class="text-xs text-gray-600">Closed on major holidays (New Year's, Memorial Day, July 4th, Labor Day, Thanksgiving, Christmas). No charges for holiday sessions.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">No-Show & Makeup Policy</h3>
+                <div class="bg-white rounded-lg p-4">
+                  <p class="text-sm text-gray-600 mb-2"><strong>No-Show:</strong> Full session fee charged. Repeated no-shows may result in schedule removal.</p>
+                  <p class="text-sm text-gray-600"><strong>Makeup Sessions:</strong> Offered as courtesy when available. Must be completed within 30 days and cannot be used as credit for future missed appointments.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -292,20 +450,81 @@ const services = [
     <!-- FAQ Section -->
     <div class="mb-16 bg-gray-50 rounded-xl p-8">
       <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
-      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">How does the subscription model work?</h3>
-          <p class="text-gray-600 mb-6">You choose either 4 × 50-minute or 8 × 25-minute sessions per month, delivered through our hybrid model of alternating in-home and virtual sessions. The 10-month commitment follows the school year schedule.</p>
-          
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">What areas do you serve for in-home visits?</h3>
-          <p class="text-gray-600">We provide in-home evaluations and therapy throughout the Hood River Gorge region, including White Salmon, Hood River, Cascade Locks, Trout Lake, and Stevenson.</p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">Do I need an evaluation before starting therapy?</h3>
-          <p class="text-gray-600 mb-6">Yes, we begin with an in-home evaluation to understand your child's specific needs and develop a personalized treatment plan. This ensures the most effective therapy approach.</p>
-          
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">Can I switch between session lengths?</h3>
-          <p class="text-gray-600">Yes, we can adjust session length during your subscription based on your child's changing needs and attention span. We'll work together to find what works best.</p>
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Column 1 -->
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">What is a screening?</h3>
+              <p class="text-gray-600">A screening is a quick, informal check of your child's communication skills. It is not used to diagnose or determine if a delay or disorder is present. Instead, a screening helps identify whether a more in-depth evaluation is recommended.</p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">What is an evaluation?</h3>
+              <p class="text-gray-600">An evaluation is a comprehensive, formal assessment of your child's speech and/or language skills. The SLP may use standardized tests, parent interviews, clinical observations, and document reviews to develop a full picture of your child's communication strengths and needs.</p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">What is a therapy session?</h3>
+              <p class="text-gray-600">A therapy session is a focused time to work on your child's individual communication goals. The SLP will engage your child in fun, goal-oriented activities and may also collaborate with you to support your child's progress between sessions.</p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">What is hybrid therapy?</h3>
+              <p class="text-gray-600">Hybrid therapy is a combination of teletherapy and in-person sessions. Some sessions take place over a secure telehealth platform, while others occur in person in your home. This model blends the convenience of virtual care with the hands-on support of face-to-face interaction.</p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Does hybrid therapy work?</h3>
+              <p class="text-gray-600">Yes! Teletherapy has been shown to be just as effective as in-person therapy for many children. Hybrid therapy provides the added benefit of building a strong therapeutic relationship through occasional in-person visits, which can be especially helpful for younger children or those who need more support with engagement.</p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Can I choose teletherapy only?</h3>
+              <p class="text-gray-600">In some cases, yes. Older children who can participate independently may do well with teletherapy only. This decision is made on a case-by-case basis and depends on your child's needs, learning style, and therapy goals. If you are out of range for the in-person service area, you may select teletherapy only!</p>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Can I choose in-person therapy only?</h3>
+              <p class="text-gray-600">At this time, we are not offering in-person-only therapy. We hope to expand services in the future (including potential in-person only options in the Columbia River Gorge area), but currently all services follow a hybrid or teletherapy model.</p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Can sessions take place somewhere other than my home?</h3>
+              <p class="text-gray-600">Yes, in some cases. Certain children may benefit from community-based sessions in places like libraries, parks, or quiet cafés. This is considered on a case-by-case basis depending on the child's goals, sensory needs, and safety.</p>
+              <p class="text-sm text-gray-500 mt-2"><strong>Note:</strong> Kailey is licensed in Oregon, Washington, and Alaska, so teletherapy sessions must occur in those states, ideally from your home or another private, quiet space.</p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Do you accept insurance?</h3>
+              <p class="text-gray-600 mb-3">We are a private-pay practice and do not bill insurance directly. This allows us to provide high-quality, personalized care without administrative limitations and time constraints.</p>
+              <div class="bg-white rounded-lg p-3">
+                <p class="text-sm text-gray-600 mb-2"><strong>Benefits of our approach:</strong></p>
+                <ul class="text-xs text-gray-600 space-y-1">
+                  <li>• More time focused on your child's progress</li>
+                  <li>• Flexible, individualized services</li>
+                  <li>• Manageable caseload for highest quality care</li>
+                </ul>
+              </div>
+              <p class="text-sm text-gray-600 mt-2">We provide superbills for possible out-of-network reimbursement.</p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">What areas do you serve?</h3>
+              <p class="text-gray-600 mb-3">We offer hybrid (in-person + virtual) therapy in the greater Columbia River Gorge area, including communities in Oregon (Corbett, Troutdale, Cascade Locks, Hood River, Portland) and Washington (Stevenson, Washougal, White Salmon, Husum, Bingen, Carson).</p>
+              <p class="text-gray-600 mb-3">For families outside our in-person service area, we provide teletherapy-only services throughout Oregon, Washington, and Alaska.</p>
+              <p class="text-sm text-gray-500">Don't see your community listed? Please contact us to inquire if you're within range for our services.</p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">What is a superbill?</h3>
+              <p class="text-gray-600 mb-3">A superbill is a detailed receipt that includes all the information your insurance company may require for you to submit an out-of-network reimbursement claim. This includes billing codes, session dates, provider credentials, and service descriptions.</p>
+              <p class="text-sm text-gray-500"><strong>Note:</strong> Reimbursement is not guaranteed and depends on your specific plan and out-of-network benefits. It is your responsibility to check with your insurance provider regarding coverage and submission requirements.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
