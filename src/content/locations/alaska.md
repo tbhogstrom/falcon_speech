@@ -3,11 +3,12 @@ state: "Alaska"
 description: "Comprehensive virtual speech therapy services available across Alaska. Our remote therapy solutions bring professional speech services to both urban and rural communities throughout the state."
 services:
   - "Speech Sound Disorders"
-  - "Language Delays"
-  - "Stuttering Therapy"
+  - "Language Development & Delays"
+  - "Stuttering/Fluency Therapy"
   - "Voice Therapy"
-  - "Accent Modification"
   - "Social Communication"
+  - "AAC Consultations"
+  - "Dyslexia Assessments"
 virtualPlatforms:
   - "Zoom for Healthcare"
   - "Microsoft Teams"
@@ -17,7 +18,4 @@ coverage:
   - "Medicare"
   - "Medicaid"
   - "Denali KidCare"
-contact:
-  phone: "(907) 555-0123"
-  email: "alaska@falconspeech.com"
 ---
