@@ -8,6 +8,7 @@ export default defineConfig({
   adapter: vercel({
     analytics: true,
     imageService: true,
-    webAnalytics: true
+    webAnalytics: true,
+    functionPerRoute: false
   })
 });
