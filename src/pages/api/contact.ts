@@ -13,11 +13,13 @@ export const POST: APIRoute = async ({ request }) => {
     const childLastName = formData.get('child-last-name') as string;
     const email = formData.get('email') as string;
     const phone = formData.get('phone') as string;
+    const requestType = formData.get('request-type') as string;
+    const childAge = formData.get('child-age') as string;
     const areaOfConcern = formData.get('area-of-concern') as string;
     const otherConcern = formData.get('other-concern') as string;
     
     // Validate required fields
-    if (!parentFirstName || !parentLastName || !childFirstName || !childLastName || !email || !phone || !areaOfConcern) {
+    if (!parentFirstName || !parentLastName || !childFirstName || !childLastName || !email || !phone || !requestType || !areaOfConcern) {
       return new Response(JSON.stringify({ 
         success: false, 
         error: 'Missing required fields' 
@@ -43,6 +45,8 @@ export const POST: APIRoute = async ({ request }) => {
       childLastName,
       email,
       phone,
+      requestType,
+      childAge || '',
       finalAreaOfConcern
     ];
 
