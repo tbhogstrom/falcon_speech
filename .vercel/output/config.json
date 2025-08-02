@@ -16,7 +16,123 @@
 			"dest": "_render"
 		},
 		{
+			"src": "^\\/about\\/?$",
+			"dest": "_render"
+		},
+		{
 			"src": "^\\/api\\/contact\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/areas-of-service\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/blog\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/blog(?:\\/(.*?))?\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/contact\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/faq\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/locations\\/cascade-locks\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/locations\\/hood-river\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/locations\\/service-areas\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/locations\\/stevenson\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/locations\\/trout-lake\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/locations\\/white-salmon\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/locations\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/policies\\/cancellation\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/policies\\/rates\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/policies\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/resources\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/schedule\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/services\\/remote\\/([^/]+?)\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/services\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/treatment-areas\\/aac-nonspeaking\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/treatment-areas\\/early-intervention\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/treatment-areas\\/language-disorders\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/treatment-areas\\/neurodiversity-affirming\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/treatment-areas\\/speech-sound-disorders\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/treatment-areas\\/stuttering-fluency\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/treatment-areas\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/who-we-are\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/$",
 			"dest": "_render"
 		}
 	],

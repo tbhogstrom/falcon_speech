@@ -1,1 +1,49 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                 */
+import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_DPdDGyMd.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../chunks/Layout_BqwSPKGZ.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Index = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Who We Are - Meet Our Team | Falcon Speech Services" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="max-w-7xl mx-auto"> <!-- Header --> <div class="text-center mb-12"> <h1 class="text-4xl font-bold text-gray-900">Who We Are</h1> <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+Meet the speech-language pathologist behind Falcon Speech Services
+</p> </div> <!-- Main Profile --> <div class="bg-white rounded-xl shadow-lg p-8 mb-12"> <div class="grid md:grid-cols-2 gap-8 items-center"> <div> <h2 class="text-3xl font-bold text-gray-900 mb-4">Kailey Falcon</h2> <p class="text-lg text-primary font-medium mb-4">Licensed Speech-Language Pathologist</p> <div class="space-y-3 text-gray-600"> <p>Kailey is a licensed speech-language pathologist serving families throughout Oregon, Washington, and Alaska. She specializes in neurodiversity-affirming therapy and takes a strengths-based approach to supporting each child's unique communication journey.</p> <p>With a passion for in-home evaluations and hybrid therapy models, Kailey brings speech therapy directly to families, creating comfortable environments where children can thrive.</p> </div> </div> <div class="text-center"> <div class="bg-gray-200 rounded-full w-64 h-64 mx-auto mb-4 flex items-center justify-center"> <span class="text-gray-500">Photo Coming Soon</span> </div> </div> </div> </div> <!-- Our Approach --> <div class="mb-12"> <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Approach</h2> <div class="grid md:grid-cols-3 gap-8"> <div class="bg-blue-50 rounded-lg p-6"> <div class="text-blue-600 mb-4"> <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path> </svg> </div> <h3 class="text-xl font-semibold text-gray-900 mb-3">Neurodiversity Affirming</h3> <p class="text-gray-600">We celebrate different ways of communicating and focus on each child's unique strengths and interests.</p> </div> <div class="bg-green-50 rounded-lg p-6"> <div class="text-green-600 mb-4"> <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path> </svg> </div> <h3 class="text-xl font-semibold text-gray-900 mb-3">Family-Centered</h3> <p class="text-gray-600">We provide therapy in your home environment and work closely with families as partners in the therapeutic process.</p> </div> <div class="bg-purple-50 rounded-lg p-6"> <div class="text-purple-600 mb-4"> <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path> </svg> </div> <h3 class="text-xl font-semibold text-gray-900 mb-3">Flexible & Innovative</h3> <p class="text-gray-600">Our hybrid model combines the best of in-person and virtual therapy to meet each family's unique needs.</p> </div> </div> </div> <!-- Mission & Values --> <div class="bg-gray-50 rounded-xl p-8 mb-12"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Mission</h2> <div class="text-center mb-8"> <p class="text-xl text-gray-600 leading-relaxed">
+To provide high-quality, neurodiversity-affirming speech therapy that celebrates each child's unique way of communicating while supporting families in the Columbia River Gorge and beyond.
+</p> </div> <div class="grid md:grid-cols-2 gap-8"> <div> <h3 class="text-xl font-semibold text-gray-900 mb-4">What We Believe</h3> <ul class="space-y-3 text-gray-600"> <li class="flex items-start"> <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg>
+Every child has a unique way of communicating that should be celebrated
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg>
+Families are the experts on their children and equal partners in therapy
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg>
+Therapy should focus on strengths, not deficits
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg>
+Quality care should be accessible and convenient for families
+</li> </ul> </div> <div> <h3 class="text-xl font-semibold text-gray-900 mb-4">Why Choose Us</h3> <ul class="space-y-3 text-gray-600"> <li class="flex items-start"> <svg class="w-5 h-5 text-blue-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+Licensed in Oregon, Washington, and Alaska
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-blue-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+Specialized in neurodiversity-affirming approaches
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-blue-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+Innovative hybrid therapy model
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-blue-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+Manageable caseload for personalized attention
+</li> </ul> </div> </div> </div> </div> <!-- CTA Section --> <div class="text-center"> <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Work Together?</h2> <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+We'd love to learn more about your child and how we can support your family's communication journey.
+</p> <div class="flex justify-center space-x-4"> <a href="/screening" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700">
+Schedule Free Call
+</a> <a href="/contact" class="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary-50">
+Contact Us
+</a> </div> </div> </div> ` })}`;
+}, "/Users/falcon/seo_python/falcon_speech_services/src/pages/who-we-are/index.astro", undefined);
+
+const $$file = "/Users/falcon/seo_python/falcon_speech_services/src/pages/who-we-are/index.astro";
+const $$url = "/who-we-are";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Index,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

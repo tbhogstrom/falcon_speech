@@ -1,1 +1,39 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                    */
+import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../../chunks/astro/server_DPdDGyMd.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../../chunks/Layout_BqwSPKGZ.mjs';
+export { renderers } from '../../renderers.mjs';
+
+const $$AacNonspeaking = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "AAC & Nonspeaking Children - Treatment | Falcon Speech Services" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="max-w-4xl mx-auto"> <!-- Header --> <div class="text-center mb-12"> <h1 class="text-4xl font-bold text-gray-900 mb-4">Nonspeaking Children & Augmentative and Alternative Communication (AAC)</h1> <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+Supporting communication through tools and systems that honor every child's unique voice
+</p> </div> <!-- Main Content --> <div class="bg-white rounded-xl shadow-lg p-8 mb-12"> <div class="prose prose-lg max-w-none"> <p class="text-gray-600 mb-6">
+Some children communicate best using supports beyond spoken words. AAC includes tools like picture boards, communication books, or speech-generating devices such as iPads with communication apps.
+</p> <div class="bg-green-50 rounded-lg p-6 mb-6"> <h3 class="text-xl font-semibold text-gray-900 mb-3">AAC Supports Communication</h3> <p class="text-gray-600">
+These systems provide children with a way to express themselves, connect with others, and build language skills, whether or not they are using spoken words. Research shows that introducing AAC early can actually support speech and language development — it does not hinder it. In fact, many children who begin using AAC go on to develop more spoken language.
+</p> </div> <p class="text-gray-600 mb-6">
+Some children use AAC as their primary way to communicate, while others use it alongside spoken language. Every child's communication journey is unique.
+</p> <div class="bg-blue-50 rounded-lg p-6"> <h3 class="text-xl font-semibold text-gray-900 mb-3">Individualized AAC Solutions</h3> <p class="text-gray-600">
+Kailey works closely with families to find AAC tools that are functional, affirming, and tailored to each child's needs — helping them build independence and confidence in their voice, however it comes.
+</p> </div> </div> </div> <!-- CTA Section --> <div class="text-center bg-gray-50 rounded-xl p-8"> <h2 class="text-2xl font-bold text-gray-900 mb-4">Every Voice Matters</h2> <p class="text-lg text-gray-600 mb-6">
+Communication comes in many forms. Let's find the right tools to help your child express themselves confidently.
+</p> <div class="flex justify-center space-x-4"> <a href="/schedule" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700">
+Schedule Evaluation
+</a> <a href="/contact" class="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary-50">
+Ask Questions
+</a> </div> </div> </div> ` })}`;
+}, "/Users/falcon/seo_python/falcon_speech_services/src/pages/treatment-areas/aac-nonspeaking.astro", undefined);
+
+const $$file = "/Users/falcon/seo_python/falcon_speech_services/src/pages/treatment-areas/aac-nonspeaking.astro";
+const $$url = "/treatment-areas/aac-nonspeaking";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$AacNonspeaking,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

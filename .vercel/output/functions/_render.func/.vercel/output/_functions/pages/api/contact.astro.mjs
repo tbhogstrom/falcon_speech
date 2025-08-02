@@ -10,9 +10,11 @@ const POST = async ({ request }) => {
     const childLastName = formData.get("child-last-name");
     const email = formData.get("email");
     const phone = formData.get("phone");
+    const requestType = formData.get("request-type");
+    const childAge = formData.get("child-age");
     const areaOfConcern = formData.get("area-of-concern");
     const otherConcern = formData.get("other-concern");
-    if (!parentFirstName || !parentLastName || !childFirstName || !childLastName || !email || !phone || !areaOfConcern) {
+    if (!parentFirstName || !parentLastName || !childFirstName || !childLastName || !email || !phone || !requestType || !areaOfConcern) {
       return new Response(JSON.stringify({
         success: false,
         error: "Missing required fields"
@@ -34,6 +36,8 @@ const POST = async ({ request }) => {
       childLastName,
       email,
       phone,
+      requestType,
+      childAge || "",
       finalAreaOfConcern
     ];
     const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbwDfD6AYiENJVsTEJyWXobSQFR3rzEOwP9y_QZYWXzTDtqiTwb1oUJHqYRQsGAet4xy/exec";

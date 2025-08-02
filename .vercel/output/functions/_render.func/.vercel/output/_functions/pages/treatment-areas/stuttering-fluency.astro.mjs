@@ -1,1 +1,43 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                    */
+import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../../chunks/astro/server_DPdDGyMd.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../../chunks/Layout_BqwSPKGZ.mjs';
+export { renderers } from '../../renderers.mjs';
+
+const $$StutteringFluency = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Stuttering & Fluency Disorders - Treatment | Falcon Speech Services" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="max-w-4xl mx-auto"> <!-- Header --> <div class="text-center mb-12"> <h1 class="text-4xl font-bold text-gray-900 mb-4">Stuttering & Fluency Disorders</h1> <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+Individualized therapy that supports confidence and communication, not just fluency
+</p> </div> <!-- Main Content --> <div class="bg-white rounded-xl shadow-lg p-8 mb-12"> <div class="prose prose-lg max-w-none"> <p class="text-gray-600 mb-6">
+Some children have difficulty getting their words out smoothly — they might repeat sounds, stretch out words, or seem "stuck" when trying to speak. This is known as a fluency disorder, and it can sometimes make kids feel frustrated, shy, or anxious about talking.
+</p> <div class="bg-purple-50 rounded-lg p-6 mb-6"> <h3 class="text-xl font-semibold text-gray-900 mb-4">Our Holistic Approach</h3> <p class="text-gray-600 mb-4">
+Stuttering therapy is highly individualized and looks at more than just the speech itself. We consider:
+</p> <ul class="space-y-2 text-gray-600"> <li class="flex items-start"> <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+How your child's speech flows
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+How they feel about talking
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+How it affects their confidence and daily life
+</li> </ul> </div> <p class="text-gray-600 mb-6">
+For some children, increasing fluency is the main goal. For others, the focus may be on feeling more comfortable, confident, and empowered to speak in any situation.
+</p> <div class="bg-blue-50 rounded-lg p-6"> <p class="text-gray-600"> <strong>We work closely with each child and family to set goals that are meaningful, supportive, and affirming — helping your child find their voice and feel good using it.</strong> </p> </div> </div> </div> <!-- CTA Section --> <div class="text-center bg-gray-50 rounded-xl p-8"> <h2 class="text-2xl font-bold text-gray-900 mb-4">Help Your Child Find Their Voice</h2> <p class="text-lg text-gray-600 mb-6">
+Every child's journey with fluency is unique. Let's work together to support your child's confidence.
+</p> <div class="flex justify-center space-x-4"> <a href="/schedule" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700">
+Schedule Evaluation
+</a> <a href="/contact" class="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary-50">
+Ask Questions
+</a> </div> </div> </div> ` })}`;
+}, "/Users/falcon/seo_python/falcon_speech_services/src/pages/treatment-areas/stuttering-fluency.astro", undefined);
+
+const $$file = "/Users/falcon/seo_python/falcon_speech_services/src/pages/treatment-areas/stuttering-fluency.astro";
+const $$url = "/treatment-areas/stuttering-fluency";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$StutteringFluency,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

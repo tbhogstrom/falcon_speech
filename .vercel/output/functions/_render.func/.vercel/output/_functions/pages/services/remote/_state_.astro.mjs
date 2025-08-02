@@ -1,1 +1,37 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                       */
+import { c as createComponent, d as createAstro, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../../../chunks/astro/server_DPdDGyMd.mjs';
+import 'kleur/colors';
+import { g as getCollection } from '../../../chunks/_astro_content_B6f93CDr.mjs';
+import { $ as $$Layout } from '../../../chunks/Layout_BqwSPKGZ.mjs';
+export { renderers } from '../../../renderers.mjs';
+
+const $$Astro = createAstro();
+async function getStaticPaths() {
+  const locations = await getCollection("locations");
+  return locations.map((location) => ({
+    params: { state: location.data.state.toLowerCase() },
+    props: { location }
+  }));
+}
+const $$state = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$state;
+  const { location } = Astro2.props;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": `Speech Therapy in ${location.data.state}` }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="max-w-4xl mx-auto"> <h1 class="text-4xl font-bold text-gray-900 mb-6">
+Speech Therapy Services in ${location.data.state} </h1> <div class="bg-white rounded-lg shadow-md p-8 mb-8"> <p class="text-lg text-gray-600 mb-6">${location.data.description}</p> <h2 class="text-2xl font-semibold text-gray-900 mb-4">Available Services</h2> <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8"> ${location.data.services.map((service) => renderTemplate`<li class="flex items-center text-gray-700"> <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg> ${service} </li>`)} </ul> <div class="border-t pt-6"> <h2 class="text-2xl font-semibold text-gray-900 mb-4">Contact Information</h2> <div class="space-y-3"> <p class="flex items-center text-gray-700"> <svg class="w-5 h-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path> </svg> ${location.data.contact.phone} </p> <p class="flex items-center text-gray-700"> <svg class="w-5 h-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path> </svg> ${location.data.contact.email} </p> <p class="flex items-center text-gray-700"> <svg class="w-5 h-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path> </svg> ${location.data.contact.address} </p> </div> </div> </div> </div> ` })}`;
+}, "/Users/falcon/seo_python/falcon_speech_services/src/pages/services/remote/[state].astro", undefined);
+
+const $$file = "/Users/falcon/seo_python/falcon_speech_services/src/pages/services/remote/[state].astro";
+const $$url = "/services/remote/[state]";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$state,
+  file: $$file,
+  getStaticPaths,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

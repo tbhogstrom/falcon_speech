@@ -1,6 +1,6 @@
 import { renderers } from './renderers.mjs';
 import { c as createExports } from './chunks/entrypoint_BnTEHTrU.mjs';
-import { manifest } from './manifest_BQYYkpsm.mjs';
+import { manifest } from './manifest_BD-5xsF7.mjs';
 
 const _page0 = () => import('./pages/_image.astro.mjs');
 const _page1 = () => import('./pages/about.astro.mjs');
@@ -22,18 +22,17 @@ const _page16 = () => import('./pages/policies/rates.astro.mjs');
 const _page17 = () => import('./pages/policies.astro.mjs');
 const _page18 = () => import('./pages/resources.astro.mjs');
 const _page19 = () => import('./pages/schedule.astro.mjs');
-const _page20 = () => import('./pages/screening.astro.mjs');
-const _page21 = () => import('./pages/services/remote/_state_.astro.mjs');
-const _page22 = () => import('./pages/services.astro.mjs');
-const _page23 = () => import('./pages/treatment-areas/aac-nonspeaking.astro.mjs');
-const _page24 = () => import('./pages/treatment-areas/early-intervention.astro.mjs');
-const _page25 = () => import('./pages/treatment-areas/language-disorders.astro.mjs');
-const _page26 = () => import('./pages/treatment-areas/neurodiversity-affirming.astro.mjs');
-const _page27 = () => import('./pages/treatment-areas/speech-sound-disorders.astro.mjs');
-const _page28 = () => import('./pages/treatment-areas/stuttering-fluency.astro.mjs');
-const _page29 = () => import('./pages/treatment-areas.astro.mjs');
-const _page30 = () => import('./pages/who-we-are.astro.mjs');
-const _page31 = () => import('./pages/index.astro.mjs');
+const _page20 = () => import('./pages/services/remote/_state_.astro.mjs');
+const _page21 = () => import('./pages/services.astro.mjs');
+const _page22 = () => import('./pages/treatment-areas/aac-nonspeaking.astro.mjs');
+const _page23 = () => import('./pages/treatment-areas/early-intervention.astro.mjs');
+const _page24 = () => import('./pages/treatment-areas/language-disorders.astro.mjs');
+const _page25 = () => import('./pages/treatment-areas/neurodiversity-affirming.astro.mjs');
+const _page26 = () => import('./pages/treatment-areas/speech-sound-disorders.astro.mjs');
+const _page27 = () => import('./pages/treatment-areas/stuttering-fluency.astro.mjs');
+const _page28 = () => import('./pages/treatment-areas.astro.mjs');
+const _page29 = () => import('./pages/who-we-are.astro.mjs');
+const _page30 = () => import('./pages/index.astro.mjs');
 
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
@@ -56,18 +55,17 @@ const pageMap = new Map([
     ["src/pages/policies/index.astro", _page17],
     ["src/pages/resources/index.astro", _page18],
     ["src/pages/schedule/index.astro", _page19],
-    ["src/pages/screening/index.astro", _page20],
-    ["src/pages/services/remote/[state].astro", _page21],
-    ["src/pages/services/index.astro", _page22],
-    ["src/pages/treatment-areas/aac-nonspeaking.astro", _page23],
-    ["src/pages/treatment-areas/early-intervention.astro", _page24],
-    ["src/pages/treatment-areas/language-disorders.astro", _page25],
-    ["src/pages/treatment-areas/neurodiversity-affirming.astro", _page26],
-    ["src/pages/treatment-areas/speech-sound-disorders.astro", _page27],
-    ["src/pages/treatment-areas/stuttering-fluency.astro", _page28],
-    ["src/pages/treatment-areas/index.astro", _page29],
-    ["src/pages/who-we-are/index.astro", _page30],
-    ["src/pages/index.astro", _page31]
+    ["src/pages/services/remote/[state].astro", _page20],
+    ["src/pages/services/index.astro", _page21],
+    ["src/pages/treatment-areas/aac-nonspeaking.astro", _page22],
+    ["src/pages/treatment-areas/early-intervention.astro", _page23],
+    ["src/pages/treatment-areas/language-disorders.astro", _page24],
+    ["src/pages/treatment-areas/neurodiversity-affirming.astro", _page25],
+    ["src/pages/treatment-areas/speech-sound-disorders.astro", _page26],
+    ["src/pages/treatment-areas/stuttering-fluency.astro", _page27],
+    ["src/pages/treatment-areas/index.astro", _page28],
+    ["src/pages/who-we-are/index.astro", _page29],
+    ["src/pages/index.astro", _page30]
 ]);
 const serverIslandMap = new Map();
 const _manifest = Object.assign(manifest, {
@@ -77,7 +75,7 @@ const _manifest = Object.assign(manifest, {
     middleware: () => import('./_noop-middleware.mjs')
 });
 const _args = {
-    "middlewareSecret": "eea31f31-35b6-4037-ae33-cc685f2c937a",
+    "middlewareSecret": "8333bf2e-1fec-457c-b084-16131cb3b186",
     "skewProtection": false
 };
 const _exports = createExports(_manifest, _args);

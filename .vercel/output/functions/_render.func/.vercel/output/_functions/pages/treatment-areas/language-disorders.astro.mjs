@@ -1,1 +1,45 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                    */
+import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../../chunks/astro/server_DPdDGyMd.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../../chunks/Layout_BqwSPKGZ.mjs';
+export { renderers } from '../../renderers.mjs';
+
+const $$LanguageDisorders = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Language Disorders - Treatment | Falcon Speech Services" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="max-w-4xl mx-auto"> <!-- Header --> <div class="text-center mb-12"> <h1 class="text-4xl font-bold text-gray-900 mb-4">Language Disorders</h1> <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+Building understanding and expression skills for confident communication in everyday situations
+</p> </div> <!-- Main Content --> <div class="bg-white rounded-xl shadow-lg p-8 mb-12"> <div class="prose prose-lg max-w-none"> <p class="text-gray-600 mb-6">
+Some children have trouble understanding what others say or expressing their own thoughts clearly. This is called a language disorder, and it can affect how a child listens, talks, learns new words, forms sentences, or follows directions.
+</p> <div class="bg-green-50 rounded-lg p-6 mb-6"> <h3 class="text-xl font-semibold text-gray-900 mb-4">Language includes many different skills, such as:</h3> <ul class="space-y-2 text-gray-600"> <li class="flex items-start"> <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+Sound patterns (like rhyming or breaking words apart)
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+Word parts (like adding -ed or -ing)
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+Grammar and sentence structure
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+Vocabulary and meaning
+</li> <li class="flex items-start"> <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+Social language (perspective taking, understanding the "unwritten" rules of social interactions, advocating for their own unique communication style)
+</li> </ul> </div> <div class="bg-blue-50 rounded-lg p-6 mb-6"> <p class="text-gray-600">
+A language disorder may show up on its own or alongside other diagnoses, such as autism or ADHD. It can also look different as a child grows.
+</p> </div> <p class="text-gray-600"> <strong>Therapy helps build your child's ability to understand and use language more confidently in everyday situations — at home, at school, and with friends.</strong> </p> </div> </div> <!-- CTA Section --> <div class="text-center bg-gray-50 rounded-xl p-8"> <h2 class="text-2xl font-bold text-gray-900 mb-4">Support Your Child's Language Development</h2> <p class="text-lg text-gray-600 mb-6">
+Language skills grow with the right support. Let's help your child communicate with confidence.
+</p> <div class="flex justify-center space-x-4"> <a href="/schedule" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700">
+Schedule Evaluation
+</a> <a href="/contact" class="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary-50">
+Ask Questions
+</a> </div> </div> </div> ` })}`;
+}, "/Users/falcon/seo_python/falcon_speech_services/src/pages/treatment-areas/language-disorders.astro", undefined);
+
+const $$file = "/Users/falcon/seo_python/falcon_speech_services/src/pages/treatment-areas/language-disorders.astro";
+const $$url = "/treatment-areas/language-disorders";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$LanguageDisorders,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
