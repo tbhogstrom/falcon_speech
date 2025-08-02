@@ -191,6 +191,71 @@ function createGetCollection({
     }
   };
 }
+function createGetEntry({
+  getEntryImport,
+  getRenderEntryImport,
+  collectionNames
+}) {
+  return async function getEntry(collectionOrLookupObject, _lookupId) {
+    let collection, lookupId;
+    if (typeof collectionOrLookupObject === "string") {
+      collection = collectionOrLookupObject;
+      if (!_lookupId)
+        throw new AstroError({
+          ...UnknownContentCollectionError,
+          message: "`getEntry()` requires an entry identifier as the second argument."
+        });
+      lookupId = _lookupId;
+    } else {
+      collection = collectionOrLookupObject.collection;
+      lookupId = "id" in collectionOrLookupObject ? collectionOrLookupObject.id : collectionOrLookupObject.slug;
+    }
+    const store = await globalDataStore.get();
+    if (store.hasCollection(collection)) {
+      const entry2 = store.get(collection, lookupId);
+      if (!entry2) {
+        console.warn(`Entry ${collection} → ${lookupId} was not found.`);
+        return;
+      }
+      const { default: imageAssetMap } = await import('./_astro_asset-imports_D9aVaOQr.mjs');
+      entry2.data = updateImageReferencesInData(entry2.data, entry2.filePath, imageAssetMap);
+      return {
+        ...entry2,
+        collection
+      };
+    }
+    if (!collectionNames.has(collection)) {
+      console.warn(`The collection ${JSON.stringify(collection)} does not exist.`);
+      return undefined;
+    }
+    const entryImport = await getEntryImport(collection, lookupId);
+    if (typeof entryImport !== "function") return undefined;
+    const entry = await entryImport();
+    if (entry._internal.type === "content") {
+      return {
+        id: entry.id,
+        slug: entry.slug,
+        body: entry.body,
+        collection: entry.collection,
+        data: entry.data,
+        async render() {
+          return render({
+            collection: entry.collection,
+            id: entry.id,
+            renderEntryImport: await getRenderEntryImport(collection, lookupId)
+          });
+        }
+      };
+    } else if (entry._internal.type === "data") {
+      return {
+        id: entry.id,
+        collection: entry.collection,
+        data: entry.data
+      };
+    }
+    return undefined;
+  };
+}
 function updateImageReferencesInData(data, fileName, imageAssetMap) {
   return new Traverse(data).map(function(ctx, val) {
     if (typeof val === "string" && val.startsWith(IMAGE_IMPORT_PREFIX)) {
@@ -292,7 +357,7 @@ function isPropagatedAssetsModule(module) {
 
 const contentDir = '/src/content/';
 
-const contentEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/speech-development-milestones.md": () => import('./speech-development-milestones_BrrlJguA.mjs'),"/src/content/locations/alaska.md": () => import('./alaska_C2WQDv3s.mjs'),"/src/content/locations/oregon.md": () => import('./oregon_BBj_YSEY.mjs'),"/src/content/locations/washington.md": () => import('./washington_BdmFSgVG.mjs')});
+const contentEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/speech-development-milestones.md": () => import('./speech-development-milestones_BrrlJguA.mjs'),"/src/content/locations/alaska.md": () => import('./alaska_gdcZ3VJ0.mjs'),"/src/content/locations/oregon.md": () => import('./oregon_CIp2V6eH.mjs'),"/src/content/locations/washington.md": () => import('./washington_DFSslucu.mjs')});
 const contentCollectionToEntryMap = createCollectionToGlobResultMap({
 	globResult: contentEntryGlob,
 	contentDir,
@@ -303,15 +368,15 @@ const dataCollectionToEntryMap = createCollectionToGlobResultMap({
 	globResult: dataEntryGlob,
 	contentDir,
 });
-createCollectionToGlobResultMap({
+const collectionToEntryMap = createCollectionToGlobResultMap({
 	globResult: { ...contentEntryGlob, ...dataEntryGlob },
 	contentDir,
 });
 
 let lookupMap = {};
-lookupMap = {"blog":{"type":"content","entries":{"speech-development-milestones":"/src/content/blog/speech-development-milestones.md"}},"locations":{"type":"content","entries":{"alaska":"/src/content/locations/alaska.md","oregon":"/src/content/locations/oregon.md","washington":"/src/content/locations/washington.md"}}};
+lookupMap = {"blog":{"type":"content","entries":{"speech-development-milestones":"/src/content/blog/speech-development-milestones.md"}},"locations":{"type":"content","entries":{"oregon":"/src/content/locations/oregon.md","washington":"/src/content/locations/washington.md","alaska":"/src/content/locations/alaska.md"}}};
 
-new Set(Object.keys(lookupMap));
+const collectionNames = new Set(Object.keys(lookupMap));
 
 function createGlobLookup(glob) {
 	return async (collection, lookupId) => {
@@ -322,7 +387,7 @@ function createGlobLookup(glob) {
 	};
 }
 
-const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/speech-development-milestones.md": () => import('./speech-development-milestones_DO4IYtuy.mjs'),"/src/content/locations/alaska.md": () => import('./alaska_VIcT1td0.mjs'),"/src/content/locations/oregon.md": () => import('./oregon_B2xdwhNR.mjs'),"/src/content/locations/washington.md": () => import('./washington_3F_jJ9_w.mjs')});
+const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/speech-development-milestones.md": () => import('./speech-development-milestones_DO4IYtuy.mjs'),"/src/content/locations/alaska.md": () => import('./alaska_BozZu5Li.mjs'),"/src/content/locations/oregon.md": () => import('./oregon_9hg3PoIh.mjs'),"/src/content/locations/washington.md": () => import('./washington_0iXXzxVj.mjs')});
 const collectionToRenderEntryMap = createCollectionToGlobResultMap({
 	globResult: renderEntryGlob,
 	contentDir,
@@ -336,4 +401,10 @@ const getCollection = createGetCollection({
 	cacheEntriesByCollection,
 });
 
-export { getCollection as g };
+const getEntry = createGetEntry({
+	getEntryImport: createGlobLookup(collectionToEntryMap),
+	getRenderEntryImport: createGlobLookup(collectionToRenderEntryMap),
+	collectionNames,
+});
+
+export { getEntry as a, getCollection as g };

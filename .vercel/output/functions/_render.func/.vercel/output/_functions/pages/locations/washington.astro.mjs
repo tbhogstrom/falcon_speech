@@ -1,0 +1,41 @@
+/* empty css                                    */
+import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead, b as addAttribute } from '../../chunks/astro/server_DPdDGyMd.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../../chunks/Layout_BqwSPKGZ.mjs';
+import { a as getEntry } from '../../chunks/_astro_content_ByEU0dh0.mjs';
+export { renderers } from '../../renderers.mjs';
+
+const $$Washington = createComponent(async ($$result, $$props, $$slots) => {
+  const washingtonData = await getEntry("locations", "washington");
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Speech Therapy Services in Washington | Falcon Speech Services" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="max-w-7xl mx-auto"> <!-- Header --> <div class="text-center mb-12"> <h1 class="text-4xl font-bold text-gray-900 mb-4">Speech Therapy Services in Washington</h1> <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+Professional virtual speech therapy services throughout Washington. Our hybrid therapy services (in-home evaluations + virtual sessions) are specifically focused on Columbia River Gorge communities.
+</p> </div> <!-- Hood River Gorge Special Section --> <div class="mb-16 bg-blue-50 rounded-xl p-8"> <div class="text-center mb-8"> <h2 class="text-3xl font-bold text-gray-900 mb-4">Hood River Gorge Communities</h2> <p class="text-lg text-gray-600">
+Special in-home evaluation and hybrid therapy services available in the Columbia River Gorge region
+</p> </div> <div class="grid md:grid-cols-3 gap-6 mb-8"> ${washingtonData.data.gorgeServices.cities.map((city) => {
+    const citySlug = city.split(" ")[0].toLowerCase().replace(" ", "-");
+    const cityName = city.split(" (")[0];
+    return renderTemplate`<a${addAttribute(`/locations/${citySlug === "white" ? "white-salmon" : citySlug}`, "href")} class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"> <h3 class="text-xl font-bold text-primary mb-2">${cityName}</h3> <p class="text-gray-600 mb-4">${city}</p> <div class="text-sm text-blue-600 font-medium">Learn more about services in ${cityName} →</div> </a>`;
+  })} </div> <div class="grid md:grid-cols-3 gap-6"> ${washingtonData.data.gorgeServices.features.map((feature) => renderTemplate`<div class="text-center"> <div class="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center"> <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg> </div> <h3 class="font-semibold text-gray-900 mb-2">${feature}</h3> </div>`)} </div> </div> <!-- Statewide Virtual Services --> <div class="mb-16"> <div class="text-center mb-8"> <h2 class="text-3xl font-bold text-gray-900 mb-4">Statewide Virtual Services</h2> <p class="text-lg text-gray-600">
+Professional virtual speech therapy available throughout Washington
+</p> </div> <div class="grid md:grid-cols-2 gap-8"> <div class="bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-semibold text-gray-900 mb-4">Available Services</h3> <ul class="space-y-2"> ${washingtonData.data.services.map((service) => renderTemplate`<li class="flex items-center text-gray-600"> <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg> ${service} </li>`)} </ul> </div> <div class="bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-semibold text-gray-900 mb-4">Virtual Platforms</h3> <ul class="space-y-2"> ${washingtonData.data.virtualPlatforms.map((platform) => renderTemplate`<li class="flex items-center text-gray-600"> <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 002 2z"></path> </svg> ${platform} </li>`)} </ul> </div> </div> </div> <!-- Insurance Coverage --> <div class="mb-16 bg-gray-50 rounded-xl p-8"> <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Insurance Coverage in Washington</h2> <div class="grid md:grid-cols-3 gap-6"> ${washingtonData.data.coverage.map((coverage) => renderTemplate`<div class="text-center"> <div class="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center"> <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg> </div> <h3 class="font-medium text-gray-900">${coverage}</h3> </div>`)} </div> </div> <!-- Contact Section --> <div class="text-center"> <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2> <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+Contact us for a free consultation to discuss your speech therapy needs in Washington.
+</p> <div class="flex justify-center space-x-4"> <a href="/contact" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700">
+Request Free Consultation
+</a> <a href="/services/remote/washington" class="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary-50">
+Learn More About Virtual Services
+</a> </div> </div> </div> ` })}`;
+}, "/Users/falcon/seo_python/falcon_speech_services/src/pages/locations/washington.astro", undefined);
+
+const $$file = "/Users/falcon/seo_python/falcon_speech_services/src/pages/locations/washington.astro";
+const $$url = "/locations/washington";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Washington,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

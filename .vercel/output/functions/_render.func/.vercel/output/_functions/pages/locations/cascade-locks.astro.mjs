@@ -9,8 +9,8 @@ const $$CascadeLocks = createComponent(($$result, $$props, $$slots) => {
 Speech Therapy in Cascade Locks, OR
 </h1> <p class="text-xl text-gray-600 mb-6">
 Hybrid in-person evaluations and virtual therapy sessions for Cascade Locks families
-</p> <div class="flex justify-center space-x-4"> <a href="/schedule" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700">
-Schedule Evaluation
+</p> <div class="flex justify-center space-x-4"> <a href="/contact" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700">
+Request Free Consultation
 </a> <a href="/contact" class="border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary-50">
 Contact Us
 </a> </div> </div> <!-- Service Area Info --> <div class="bg-blue-50 rounded-lg p-8 mb-12"> <h2 class="text-2xl font-bold text-gray-900 mb-4">Serving Cascade Locks & Surrounding Areas</h2> <div class="grid md:grid-cols-2 gap-6"> <div> <h3 class="text-lg font-semibold text-gray-900 mb-3">In-Home Evaluations Available</h3> <ul class="space-y-2 text-gray-700"> <li class="flex items-center"> <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg>
@@ -43,8 +43,8 @@ Parent coaching and home support
 Progress monitoring and reporting
 </li> <li class="flex items-center"> <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg>
 Coordination with local schools
-</li> </ul> <a href="/schedule" class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-gray-100">
-Start Your Subscription
+</li> </ul> <a href="/contact" class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-gray-100">
+Request Free Consultation
 </a> </div> </div> <!-- Rural Community Benefits --> <div class="mb-12"> <h2 class="text-3xl font-bold text-gray-900 mb-6">Perfect for Small Town Living</h2> <div class="grid md:grid-cols-2 gap-8"> <div> <h3 class="text-xl font-semibold text-gray-900 mb-4">Understanding Rural Challenges</h3> <p class="text-gray-600 mb-4">
 We know that living in Cascade Locks means limited access to specialized services. Our hybrid model brings expert speech therapy directly to your community.
 </p> <h3 class="text-xl font-semibold text-gray-900 mb-4">Nature-Inspired Therapy</h3> <p class="text-gray-600">
@@ -59,8 +59,8 @@ Many families in Cascade Locks are connected to outdoor adventures and the PCT. 
 Your local landmarks become conversation starters and vocabulary builders. We help children express their experiences and observations about their unique community.
 </p> </div> </div> </div> <!-- Neurodiversity Affirming --> <div class="bg-green-50 rounded-lg p-8 mb-12"> <h2 class="text-2xl font-bold text-gray-900 mb-4">Neurodiversity Affirming Approach</h2> <div class="grid md:grid-cols-3 gap-6"> <div class="text-center"> <div class="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center"> <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path> </svg> </div> <h3 class="font-semibold text-gray-900 mb-2">Strength-Based</h3> <p class="text-sm text-gray-600">Building on each child's natural abilities and local interests</p> </div> <div class="text-center"> <div class="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center"> <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path> </svg> </div> <h3 class="font-semibold text-gray-900 mb-2">Collaborative</h3> <p class="text-sm text-gray-600">Working with families as partners in small-town community care</p> </div> <div class="text-center"> <div class="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center"> <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path> </svg> </div> <h3 class="font-semibold text-gray-900 mb-2">Respectful</h3> <p class="text-sm text-gray-600">Honoring different communication styles in your rural community</p> </div> </div> </div> <!-- Contact & CTA --> <div class="bg-gray-50 rounded-lg p-8 text-center"> <h2 class="text-2xl font-bold text-gray-900 mb-4">Ready to Get Started in Cascade Locks?</h2> <p class="text-gray-600 mb-6">
 Contact us today to schedule your in-home evaluation and discover how our hybrid model can serve your family right in Cascade Locks.
-</p> <div class="flex justify-center space-x-4"> <a href="/schedule" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700">
-Schedule Evaluation
+</p> <div class="flex justify-center space-x-4"> <a href="/contact" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700">
+Request Free Consultation
 </a> <a href="tel:+1234567890" class="border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary-50">
 Call (123) 456-7890
 </a> </div> </div> </div> ` })}`;

@@ -9,8 +9,8 @@ const $$WhiteSalmon = createComponent(($$result, $$props, $$slots) => {
 Speech Therapy in White Salmon, WA
 </h1> <p class="text-xl text-gray-600 mb-6">
 Hybrid in-person evaluations and virtual therapy sessions for White Salmon families
-</p> <div class="flex justify-center space-x-4"> <a href="/schedule" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700">
-Schedule Evaluation
+</p> <div class="flex justify-center space-x-4"> <a href="/contact" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700">
+Request Free Consultation
 </a> <a href="/contact" class="border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary-50">
 Contact Us
 </a> </div> </div> <!-- Service Area Info --> <div class="bg-blue-50 rounded-lg p-8 mb-12"> <h2 class="text-2xl font-bold text-gray-900 mb-4">Serving White Salmon & Surrounding Areas</h2> <div class="grid md:grid-cols-2 gap-6"> <div> <h3 class="text-lg font-semibold text-gray-900 mb-3">In-Home Evaluations Available</h3> <ul class="space-y-2 text-gray-700"> <li class="flex items-center"> <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg>
@@ -43,8 +43,8 @@ Parent coaching and home program support
 Progress monitoring and reporting
 </li> <li class="flex items-center"> <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg>
 Flexible scheduling around your family's needs
-</li> </ul> <a href="/schedule" class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-gray-100">
-Start Your Subscription
+</li> </ul> <a href="/contact" class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-gray-100">
+Request Free Consultation
 </a> </div> </div> <!-- Why Choose Us --> <div class="mb-12"> <h2 class="text-3xl font-bold text-gray-900 mb-6">Why White Salmon Families Choose Falcon Speech</h2> <div class="grid md:grid-cols-2 gap-8"> <div> <h3 class="text-xl font-semibold text-gray-900 mb-4">Local Understanding</h3> <p class="text-gray-600 mb-4">
 We understand the unique challenges of living in a small Columbia River Gorge community. Our services are designed to work with your rural lifestyle, not against it.
 </p> <h3 class="text-xl font-semibold text-gray-900 mb-4">Neurodiversity Affirming</h3> <p class="text-gray-600">
@@ -55,8 +55,8 @@ We work closely with White Salmon families to ensure therapy goals align with yo
 Virtual sessions mean no more driving to Hood River or Portland for therapy. We bring expert care directly to your home.
 </p> </div> </div> </div> <!-- Contact & CTA --> <div class="bg-gray-50 rounded-lg p-8 text-center"> <h2 class="text-2xl font-bold text-gray-900 mb-4">Ready to Get Started in White Salmon?</h2> <p class="text-gray-600 mb-6">
 Contact us today to schedule your in-home evaluation or learn more about our subscription therapy model.
-</p> <div class="flex justify-center space-x-4"> <a href="/schedule" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700">
-Schedule Evaluation
+</p> <div class="flex justify-center space-x-4"> <a href="/contact" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700">
+Request Free Consultation
 </a> <a href="tel:+1234567890" class="border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary-50">
 Call (123) 456-7890
 </a> </div> </div> </div> ` })}`;

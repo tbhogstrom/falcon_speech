@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./washington_DYZ7VpPn.mjs');
+						return import('./oregon_CjDskdNr.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

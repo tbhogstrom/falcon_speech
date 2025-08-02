@@ -44,6 +44,10 @@
 			"dest": "_render"
 		},
 		{
+			"src": "^\\/locations\\/alaska\\/?$",
+			"dest": "_render"
+		},
+		{
 			"src": "^\\/locations\\/cascade-locks\\/?$",
 			"dest": "_render"
 		},
@@ -52,7 +56,7 @@
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/locations\\/service-areas\\/?$",
+			"src": "^\\/locations\\/oregon\\/?$",
 			"dest": "_render"
 		},
 		{
@@ -61,6 +65,10 @@
 		},
 		{
 			"src": "^\\/locations\\/trout-lake\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/locations\\/washington\\/?$",
 			"dest": "_render"
 		},
 		{

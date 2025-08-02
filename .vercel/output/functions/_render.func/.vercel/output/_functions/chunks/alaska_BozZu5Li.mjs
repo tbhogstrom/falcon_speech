@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./oregon_cpg10WfB.mjs');
+						return import('./alaska_DTHTxVLF.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

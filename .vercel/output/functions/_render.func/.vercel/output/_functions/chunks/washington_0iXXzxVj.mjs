@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./alaska_C4bB4nWK.mjs');
+						return import('./washington_DOmYPM41.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

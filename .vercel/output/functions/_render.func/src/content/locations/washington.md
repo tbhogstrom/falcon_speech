@@ -1,13 +1,23 @@
 ---
 state: "Washington"
-description: "Professional virtual speech therapy services available throughout Washington state. Our certified therapists provide comprehensive online sessions using secure, HIPAA-compliant platforms."
+description: "Professional virtual speech therapy services available throughout Washington state. In the Hood River Gorge area, we also offer in-home evaluations and hybrid therapy sessions."
+gorgeServices:
+  cities:
+    - "White Salmon (including Bingen & Lyle)"
+    - "Stevenson (including Carson)"
+    - "Trout Lake (including Glenwood)"
+  features:
+    - "In-home evaluations"
+    - "Hybrid therapy sessions (alternating in-home and virtual)"
+    - "Natural environment assessments"
 services:
   - "Speech Sound Disorders"
-  - "Language Delays"
-  - "Stuttering Therapy"
+  - "Language Development & Delays"
+  - "Stuttering/Fluency Therapy"
   - "Voice Therapy"
-  - "Accent Modification"
   - "Social Communication"
+  - "AAC Consultations"
+  - "Dyslexia Assessments"
 virtualPlatforms:
   - "Zoom for Healthcare"
   - "Microsoft Teams"
@@ -16,7 +26,4 @@ coverage:
   - "All major insurance providers"
   - "Medicare"
   - "Medicaid"
-contact:
-  phone: "(206) 555-0123"
-  email: "washington@falconspeech.com"
 ---

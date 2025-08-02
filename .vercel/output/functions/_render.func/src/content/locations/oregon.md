@@ -1,13 +1,22 @@
 ---
 state: "Oregon"
-description: "Expert virtual speech therapy services throughout Oregon. Our licensed therapists deliver personalized care using secure telehealth platforms, making professional speech therapy accessible from anywhere in the state."
+description: "Expert virtual speech therapy services throughout Oregon. In the Hood River Gorge area, we also offer in-home evaluations and hybrid therapy sessions."
+gorgeServices:
+  cities:
+    - "Hood River (including Odell & Parkdale)"
+    - "Cascade Locks (including Bonneville)"
+  features:
+    - "In-home evaluations"
+    - "Hybrid therapy sessions (alternating in-home and virtual)"
+    - "Natural environment assessments"
 services:
   - "Speech Sound Disorders"
-  - "Language Delays"
-  - "Stuttering Therapy"
+  - "Language Delays & Disorders"
+  - "Stuttering/Fluency Therapy"
   - "Voice Therapy"
-  - "Accent Modification"
   - "Social Communication"
+  - "AAC Consultations"
+  - "Dyslexia Assessments"
 virtualPlatforms:
   - "Zoom for Healthcare"
   - "Microsoft Teams"
@@ -16,7 +25,4 @@ coverage:
   - "All major insurance providers"
   - "Medicare"
   - "Oregon Health Plan"
-contact:
-  phone: "(503) 555-0123"
-  email: "oregon@falconspeech.com"
 ---

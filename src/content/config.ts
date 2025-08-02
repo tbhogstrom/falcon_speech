@@ -15,12 +15,12 @@ const locations = defineCollection({
     state: z.string(),
     description: z.string(),
     services: z.array(z.string()),
-    contact: z.object({
-      phone: z.string(),
-      email: z.string()
-    }),
     virtualPlatforms: z.array(z.string()),
-    coverage: z.array(z.string())
+    coverage: z.array(z.string()),
+    gorgeServices: z.object({
+      cities: z.array(z.string()),
+      features: z.array(z.string())
+    }).optional()
   })
 });
 
